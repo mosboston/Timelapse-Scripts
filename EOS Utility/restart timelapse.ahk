@@ -10,15 +10,17 @@ Gosub, StartTimeLapse
 exit
 
 StopTimeLapse:
-WinActivate Timer shooting status
-WinWaitActive Timer shooting status
+WinActivate, ahk_class WindowsForms10.Window.8.app.0.3fbab22_r14_ad1
+WinWaitActive, ahk_class WindowsForms10.Window.8.app.0.3fbab22_r14_ad1
+WinActivate, Timer shooting status
+;WinWaitActive, Timer shooting status
 ControlClick, Stop 
 return
 
 StartTimeLapse:
-WinActivate, ahk_class WindowsForms10.Window.8.app.0.3fbab22_r15_ad1
-WinWaitActive, ahk_class WindowsForms10.Window.8.app.0.3fbab22_r15_ad1
-ControlClick, WindowsForms10.BUTTON.app.0.3fbab22_r15_ad11, ahk_class WindowsForms10.Window.8.app.0.3fbab22_r15_ad1
+WinActivate, ahk_class WindowsForms10.Window.8.app.0.3fbab22_r14_ad1
+WinWaitActive, ahk_class WindowsForms10.Window.8.app.0.3fbab22_r14_ad1
+ControlClick, WindowsForms10.BUTTON.app.0.3fbab22_r14_ad11, ahk_class WindowsForms10.Window.8.app.0.3fbab22_r14_ad1
 
 IfWinExist, Timer shooting settings 
 {
