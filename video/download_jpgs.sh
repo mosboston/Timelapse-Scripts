@@ -18,5 +18,5 @@ done
 cd $1
 /home/ksimmons/crgcam/find_gaps.sh $1
 
-/home/ksimmons/crgcam/make_vid.sh
+/home/ksimmons/crgcam/make_vid.sh & 
  
