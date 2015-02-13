@@ -35,7 +35,7 @@ do
 	
 	if [ ! -f IMG_*$PADDED_COUNTER.JPG ] || [ ! -s IMG_*$PADDED_COUNTER.JPG ]; then
 	    echo "`date`: IMG_$PADDED_COUNTER.JPG not found twice, patching with old frame!" >> gap_log.txt
- 	    cp -f IMG_$[$PADDED_COUNTER -1].JPG IMG_$PADDED_COUNTER 
+ 	    cp -f IMG_$[$PADDED_COUNTER -1].JPG IMG_$PADDED_COUNTER.JPG
 	fi     	
 
 	COUNTER=$[$COUNTER +1]
